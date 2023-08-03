@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Conexa api challenge",
   "main": "/server/server.js",
+  "engines": {
+    "node": ">=14 <15"
+  },
   "scripts": {
     "dev": "nodemon server/server",
+    "server": "node --watch server/server",
     "start": "node server/server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run transpile"
