@@ -1,4 +1,4 @@
-name: staging
+name: build
 
 on:
   pull_request:
@@ -19,8 +19,7 @@ jobs:
           node-version: '16.x'
 
       - name: Install dependencies
-        working-directory: ./client
         run: npm install
 
       - name: Build project     
-        run: CI=false npm run build
+        run: npm run build
