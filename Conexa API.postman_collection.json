@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "e492fe11-487d-4af6-9537-a7e564d5f054",
+		"name": "Conexa API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all characters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/characters/listAllCharacters/?page=3",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"characters",
+						"listAllCharacters",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search character by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/characters/searchCharacterByName/?search=bossk",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"characters",
+						"searchCharacterByName",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "bossk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/films/listFilms",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"films",
+						"listFilms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/vehicles/listVehicles/?page=1",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"vehicles",
+						"listVehicles",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/planets/listPlanets",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"planets",
+						"listPlanets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get vehicle with pilod and film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_BASE}}/vehicles/vehicleWithPilotsAndFilms/?id=7",
+					"host": [
+						"{{URL_BASE}}"
+					],
+					"path": [
+						"vehicles",
+						"vehicleWithPilotsAndFilms",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
